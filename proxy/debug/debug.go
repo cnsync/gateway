@@ -6,8 +6,8 @@ import (
 	"path"
 	"strings"
 
-	rmux "github.com/go-kratos/gateway/router/mux"
-	"github.com/go-kratos/kratos/v2/log"
+	rmux "github.com/cnsync/gateway/router/mux"
+	"github.com/cnsync/kratos/log"
 	"github.com/gorilla/mux"
 )
 

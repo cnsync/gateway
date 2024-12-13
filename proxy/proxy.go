@@ -16,15 +16,15 @@ import (
 	"sync/atomic"
 	"time"
 
+	config "github.com/cnsync/gateway/api/gateway/config/v1"
+	"github.com/cnsync/gateway/client"
+	"github.com/cnsync/gateway/middleware"
+	"github.com/cnsync/gateway/router"
+	"github.com/cnsync/gateway/router/mux"
+	"github.com/cnsync/kratos/log"
+	"github.com/cnsync/kratos/selector"
+	"github.com/cnsync/kratos/transport/http/status"
 	"github.com/go-kratos/aegis/circuitbreaker/sre"
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	"github.com/go-kratos/gateway/client"
-	"github.com/go-kratos/gateway/middleware"
-	"github.com/go-kratos/gateway/router"
-	"github.com/go-kratos/gateway/router/mux"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/selector"
-	"github.com/go-kratos/kratos/v2/transport/http/status"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

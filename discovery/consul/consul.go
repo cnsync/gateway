@@ -3,9 +3,9 @@ package consul
 import (
 	"net/url"
 
-	"github.com/go-kratos/gateway/discovery"
-	"github.com/go-kratos/kratos/contrib/registry/consul/v2"
-	"github.com/go-kratos/kratos/v2/registry"
+	"github.com/cnsync/gateway/discovery"
+	"github.com/cnsync/kratos/contrib/registry/consul"
+	"github.com/cnsync/kratos/registry"
 	"github.com/hashicorp/consul/api"
 )
 

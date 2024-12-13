@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cnsync/kratos/log"
 	"github.com/go-kratos/feature"
-	"github.com/go-kratos/kratos/v2/log"
 	"github.com/google/uuid"
 	"go.uber.org/atomic"
 	"golang.org/x/exp/rand"

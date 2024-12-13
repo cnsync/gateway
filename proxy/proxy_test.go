@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	"github.com/go-kratos/gateway/client"
-	"github.com/go-kratos/gateway/middleware"
-	"github.com/go-kratos/gateway/middleware/logging"
+	config "github.com/cnsync/gateway/api/gateway/config/v1"
+	"github.com/cnsync/gateway/client"
+	"github.com/cnsync/gateway/middleware"
+	"github.com/cnsync/gateway/middleware/logging"
 )
 
 type responseWriter struct {

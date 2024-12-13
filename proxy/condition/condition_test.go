@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
+	config "github.com/cnsync/gateway/api/gateway/config/v1"
 )
 
 func TestRetryByStatusCode(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-kratos/gateway/middleware"
-	"github.com/go-kratos/kratos/v2/selector"
+	"github.com/cnsync/gateway/middleware"
+	"github.com/cnsync/kratos/selector"
 )
 
 // client 结构体定义了一个客户端，用于发送 HTTP 请求和管理服务节点

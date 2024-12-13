@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kratos/gateway/proxy/debug"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/registry"
+	"github.com/cnsync/gateway/proxy/debug"
+	"github.com/cnsync/kratos/log"
+	"github.com/cnsync/kratos/registry"
 	"github.com/google/uuid"
 )
 

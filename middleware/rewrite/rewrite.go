@@ -5,26 +5,32 @@ import (
 	"path"
 	"strings"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	v1 "github.com/go-kratos/gateway/api/gateway/middleware/rewrite/v1"
+	config "github.com/cnsync/gateway/api/gateway/config/v1"
+	v1 "github.com/cnsync/gateway/api/gateway/middleware/rewrite/v1"
 
-	"github.com/go-kratos/gateway/middleware"
+	"github.com/cnsync/gateway/middleware"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 )
 
+// 包初始化时注册 rewrite 中间件
 func init() {
 	middleware.Register("rewrite", Middleware)
 }
 
+// stripPrefix 函数用于去除字符串 origin 的前缀 prefix，并确保结果以斜杠 / 开头
 func stripPrefix(origin string, prefix string) string {
+	// 使用 strings.TrimPrefix 函数去除 origin 字符串的前缀 prefix
 	out := strings.TrimPrefix(origin, prefix)
+	// 如果去除前缀后的字符串为空，则返回 /
 	if out == "" {
 		return "/"
 	}
+	// 如果去除前缀后的字符串的第一个字符不是 /，则在其前面添加 /
 	if out[0] != '/' {
 		return path.Join("/", out)
 	}
+	// 如果去除前缀后的字符串的第一个字符是 /，则直接返回该字符串
 	return out
 }
 

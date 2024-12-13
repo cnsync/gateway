@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/go-kratos/kratos/v2/registry"
+	"github.com/cnsync/kratos/registry"
 )
 
 // globalRegistry 是一个全局的注册中心实例

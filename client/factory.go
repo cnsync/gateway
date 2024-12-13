@@ -9,12 +9,12 @@ import (
 	"strings"
 	"sync/atomic"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
+	config "github.com/cnsync/gateway/api/gateway/config/v1"
 
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/registry"
-	"github.com/go-kratos/kratos/v2/selector"
-	"github.com/go-kratos/kratos/v2/selector/p2c"
+	"github.com/cnsync/kratos/log"
+	"github.com/cnsync/kratos/registry"
+	"github.com/cnsync/kratos/selector"
+	"github.com/cnsync/kratos/selector/p2c"
 )
 
 // BuildContext 结构体定义了构建客户端所需的上下文信息

@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-kratos/kratos/v2/selector"
+	"github.com/cnsync/kratos/selector"
 	"github.com/prometheus/client_golang/prometheus"
 	"golang.org/x/net/http2"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	"github.com/go-kratos/gateway/middleware"
+	config "github.com/cnsync/gateway/api/gateway/config/v1"
+	"github.com/cnsync/gateway/middleware"
 )
 
 // 定义一个空的 node 结构体实例，用于实现 selector.Node 接口

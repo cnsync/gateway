@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	configv1 "github.com/go-kratos/gateway/api/gateway/config/v1"
-	"github.com/go-kratos/kratos/v2/log"
+	configv1 "github.com/cnsync/gateway/api/gateway/config/v1"
+	"github.com/cnsync/kratos/log"
 	"google.golang.org/protobuf/encoding/protojson"
 	"sigs.k8s.io/yaml"
 )
